@@ -2,4 +2,4 @@ def demo(name, age):
 
     print(name, age)
 
-demo("Ben", 25)
+demo("Andy", 87)
