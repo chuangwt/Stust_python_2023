@@ -1,7 +1,9 @@
 class Chicken:
-    def __init__(self, store, parts, spiciness):
+    def __init__(self, store, taste, parts, source, spiciness):
         self.store = store              #店家
+        self.taste = taste              #口味
         self.parts = parts              #部位
+        self.source = source            #來源
         self.spiciness = spiciness      #辣度
 
 
@@ -42,7 +44,7 @@ class SpicinessChicken(Chicken):
 if __name__ == "__main__":
     
     # 建立一個新的 PartsChicken對象
-    store = PartsChicken("肯德基", "麥當勞", "胖老爹", "丹丹漢堡")
+    store = PartsChicken("雞腿", "雞翅", "雞排", "雞胸肉")
     print(store.chicken_store)
     print(store.partschicken_parts)
 
@@ -50,3 +52,6 @@ if __name__ == "__main__":
     spiciness = SpicinessChicken("不辣", "小辣", "中辣", "大辣")
     print(spiciness.chicken_store)
     print(spiciness.spicinesschicken_spiciness)
+
+    chicken = Chicken("麥當勞", "肯德基", "胖老爹", "丹丹漢堡")
+    print(chicken.chicken_store)
